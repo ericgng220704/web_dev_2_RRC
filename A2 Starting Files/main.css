@@ -1,0 +1,45 @@
+@import "http://fonts.googleapis.com/css?family=Carrois+Gothic";
+body {
+     margin: 10px auto;
+     width: 700px;
+     font-family: carrois gothic;
+     border-radius: 10px;
+}
+h1,
+h2 {
+     padding: 2px;
+}
+h1 {
+     font-size: 22px;
+}
+table {
+     font-size: 14px;
+     border: 2px solid #000;
+     width: 580px;
+     margin: 0 auto 1em;
+     border-radius: 10px;
+}
+td {
+     border: 1px solid #000;
+     padding: 2px;
+     margin: 3px;
+}
+#rollingrick {
+     margin: 10px auto;
+     width: 650px;
+}
+.alignright {
+     text-align: right;
+}
+.bold {
+     font-weight: 700;
+}
+.invoice {
+     border: #000 solid 2px;
+     padding: 5px;
+     width: 660px;
+     margin: 0 auto;
+     color: #000;
+     border-radius: 10px;
+     padding-bottom: 25px;
+}

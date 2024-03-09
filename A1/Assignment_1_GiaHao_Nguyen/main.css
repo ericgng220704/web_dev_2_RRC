@@ -1,0 +1,215 @@
+body {
+     /* background: linear-gradient(
+          107deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(197, 224, 255, 1) 100%
+     ); */
+     background: linear-gradient(135deg, black, #220033);
+     font-family: "Roboto", serif;
+     color: #fff;
+}
+input[type="radio"] {
+     display: none;
+}
+.galleries {
+     display: flex;
+     gap: 2.4rem;
+}
+
+.gallery__item {
+     background-color: #343a40;
+     border-radius: 1rem;
+     overflow: hidden;
+}
+
+.gallery__item-heading {
+     font-size: 1.5rem;
+     margin-left: 1rem;
+     line-height: 1.05;
+     color: #fff;
+}
+
+.carousel {
+     width: 100%;
+     height: 150vh;
+     overflow: hidden;
+     transform-style: preserve-3d;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 20rem;
+}
+.carousel__items {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     margin-bottom: 2rem;
+}
+
+.carousel__item {
+     position: absolute;
+     width: 60%;
+     height: 100%;
+     left: 0;
+     right: 0;
+     margin: auto;
+     transition: all 0.8s ease;
+     cursor: pointer;
+}
+
+.city {
+     position: absolute;
+     bottom: 27rem;
+     right: 2rem;
+     z-index: 99;
+}
+
+.index {
+     position: absolute;
+     top: -5rem;
+     left: 2rem;
+     z-index: 99;
+     font-size: 8rem;
+}
+
+a {
+     color: inherit;
+}
+
+.credit {
+     position: absolute;
+     font-size: 1rem;
+     bottom: 27rem;
+     left: 1rem;
+     z-index: 1;
+     color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel img {
+     width: 100%;
+     height: 40rem;
+     border-radius: 10px;
+     object-fit: cover;
+}
+
+#carousel__item-1:checked ~ .carousel__items #idk-4,
+#carousel__item-2:checked ~ .carousel__items #idk-1,
+#carousel__item-3:checked ~ .carousel__items #idk-2,
+#carousel__item-4:checked ~ .carousel__items #idk-3 {
+     transform: translatex(40%) scale(0.8);
+     opacity: 0.4;
+     z-index: 1;
+}
+#carousel__item-1:checked ~ .carousel__items #idk-2,
+#carousel__item-2:checked ~ .carousel__items #idk-3,
+#carousel__item-3:checked ~ .carousel__items #idk-4,
+#carousel__item-4:checked ~ .carousel__items #idk-1 {
+     transform: translatex(-40%) scale(0.8);
+     opacity: 0.4;
+     z-index: 1;
+}
+#carousel__item-1:checked ~ .carousel__items #idk-1,
+#carousel__item-2:checked ~ .carousel__items #idk-2,
+#carousel__item-3:checked ~ .carousel__items #idk-3,
+#carousel__item-4:checked ~ .carousel__items #idk-4 {
+     transform: translatex(0) scale(1);
+     opacity: 1;
+     z-index: 2;
+}
+#carousel__item-1:checked ~ .carousel__items #idk-3,
+#carousel__item-2:checked ~ .carousel__items #idk-4,
+#carousel__item-3:checked ~ .carousel__items #idk-1,
+#carousel__item-4:checked ~ .carousel__items #idk-2 {
+     transform: translatex(0) scale(1);
+     opacity: 0;
+     z-index: 0;
+}
+#carousel__item-1:checked ~ .carousel__items #idk-1 img,
+#carousel__item-2:checked ~ .carousel__items #idk-2 img,
+#carousel__item-3:checked ~ .carousel__items #idk-3 img,
+#carousel__item-4:checked ~ .carousel__items #idk-4 img {
+     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.js-slider {
+     margin-top: -40rem;
+}
+
+.carousel--2 {
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 2rem;
+}
+
+.prev-button {
+     position: absolute;
+     top: 50%;
+     left: 15rem;
+     transform: translateY(-50%);
+}
+
+.next-button {
+     position: absolute;
+     top: 50%;
+     right: 15rem;
+     transform: translateY(-50%);
+}
+
+.btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 3rem;
+     height: 3rem;
+     padding: 1rem;
+     border-radius: 50%;
+     border-color: #fff;
+     color: #fff;
+     background-color: #220033;
+}
+
+.carousel__items--2 {
+     width: 100%;
+     display: flex;
+     transition: transform 0.5s ease;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+
+.img-box {
+     position: relative;
+}
+
+.city--2 {
+     position: absolute;
+     bottom: 0;
+     right: 1rem;
+}
+.index--2 {
+     position: absolute;
+     top: -3rem;
+     left: 1rem;
+     font-size: 4rem;
+}
+.credit--2 {
+     position: absolute;
+     bottom: 0;
+     left: 1rem;
+     font-size: 1rem;
+     color: rgba(255, 255, 255, 0.8);
+}
+.carousel__items--2 img {
+     height: 40rem;
+     width: 40rem;
+     border-radius: 10px;
+}
+
+.hidden {
+     display: none;
+}

@@ -1,0 +1,74 @@
+<!-------w------------
+
+    Assignment 4
+    Name: 
+    Date:
+    Description:
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <script defer src="script.js"></script>
+          <link rel="stylesheet" href="main.css" />
+          <title>My Open Data Assignment</title>
+     </head>
+     <body>
+          <div class="wrapper">
+               <section class="section-search">
+                    <h1 class="heading-second">
+                         Find your garbage collection schedule.
+                    </h1>
+                    <form action="" id="form">
+                         <label for="search-bar" class="search-label"
+                              >Search</label
+                         >
+                         <input
+                              type="text"
+                              name="search-bar"
+                              id="search-bar"
+                              required
+                              pattern="[0-9A-Za-z\s,]+"
+                              placeholder="Combined address, Ex: 160 Princess St"
+                         />
+                         <button type="submit" id="submit">
+                              <ion-icon name="search-outline"></ion-icon>
+                         </button>
+                    </form>
+                    <div class="error">
+                         <p class="error-message">Error:</p>
+                    </div>
+               </section>
+
+               <section class="info">
+                    <h2 class="heading-second" id="hi"></h2>
+                    <ul class="result-date-list">
+                         <!-- <li class="result-date">
+                              <p class="Day">Thursday</p>
+                              <p class="Date">Feb 20 2024</p>
+                              <div class="icons">
+                                   <ion-icon name="flower-outline"></ion-icon>
+                                   <ion-icon name="earth-outline"></ion-icon>
+                                   <ion-icon name="leaf-outline"></ion-icon>
+                              </div>
+                         </li> -->
+                    </ul>
+               </section>
+          </div>
+          <script
+               type="module"
+               src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+               nomodule
+               src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
+     </body>
+</html>
